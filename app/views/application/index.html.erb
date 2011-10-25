@@ -1,0 +1,5 @@
+<h1>Logger comparison</h1>
+<p>Rails.logger.inspect = "<%= Rails.logger.inspect %>"</p>
+<p>ActionController::Base.logger.inspect = "<%= ActionController::Base.logger.inspect %>"</p>
+
+<p>Those need to both point to the STDOUT logger for anything in Rails' LogSubscriber classes to work</p>
